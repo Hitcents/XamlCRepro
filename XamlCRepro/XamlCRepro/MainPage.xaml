@@ -5,7 +5,7 @@
   xmlns:xc="clr-namespace:XamlCRepro;assembly=XamlCRepro"
   x:Class="XamlCRepro.MainPage">
   <StackLayout>
-    <!--Normal one that works-->
+    <!--Normal one-->
     <Label WidthRequest="{xc:Scale 10}" />
 
     <!--Margin breaks-->
@@ -14,7 +14,7 @@
     <!--Padding breaks-->
     <ContentView Padding="{xc:Scale '10,10,10,10'}" />
     
-    <!--RowHeight breaks-->
+    <!--RowHeight (I think this one works)-->
     <ListView RowHeight="{xc:Scale 20}" />
     
     <!--Grid row and column breaks-->
