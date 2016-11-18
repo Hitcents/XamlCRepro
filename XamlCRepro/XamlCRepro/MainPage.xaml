@@ -15,7 +15,7 @@
     <ContentView Padding="{xc:Scale '10,10,10,10'}" />
     
     <!--RowHeight (I think this one works)-->
-    <ListView RowHeight="{xc:Scale 20}" />
+    <ListView RowHeight="{xc:Scale 20, Integer=True}" />
     
     <!--Grid row and column breaks-->
     <Grid>
