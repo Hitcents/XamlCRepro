@@ -5,26 +5,10 @@
   xmlns:xc="clr-namespace:XamlCRepro;assembly=XamlCRepro"
   x:Class="XamlCRepro.MainPage">
   <StackLayout>
-    <!--Normal one-->
-    <Label WidthRequest="{xc:Scale 10}" />
-
-    <!--Margin breaks-->
-    <Label Margin="{xc:Scale '10,10,10,10'}" />
-
-    <!--Padding breaks-->
-    <ContentView Padding="{xc:Scale '10,10,10,10'}" />
-    
-    <!--RowHeight (I think this one works)-->
-    <ListView RowHeight="{xc:Scale 20, Integer=True}" />
-    
-    <!--Grid row and column breaks-->
-    <Grid>
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="{xc:Scale 10}" />
-      </Grid.ColumnDefinitions>
-      <Grid.RowDefinitions>
-        <RowDefinition Height="{xc:Scale 10}" />
-      </Grid.RowDefinitions>
-    </Grid>
+    <!--NOTE: 
+      - doesn't actually matter if the resource is there or not
+      - If you just use "Red" instead of {StaticResource} it works fine
+      -->
+    <BoxView xc:Theme.StartColor="{StaticResource Red}" xc:Theme.EndColor="{StaticResource Red}" />
   </StackLayout>
 </ContentPage>
