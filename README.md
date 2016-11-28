@@ -1,5 +1,5 @@
 # XamlCRepro
-Repro for some issues with XAMLC in Xamarin.Forms
+Repro for an issue with XamlC in Xamarin.Forms
 
 I have created some attached properties on `Theme` to show the issue. Build the app to see XamlC throw the error.
 
