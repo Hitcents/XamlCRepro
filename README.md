@@ -1,10 +1,11 @@
 # XamlCRepro
 Repro for some issues with XAMLC in Xamarin.Forms
 
-I have created `ScaleExtension` to show the issues. Build the app to see XamlC throw the errors.
+I have created some attached properties on `Theme` to show the issue. Build the app to see XamlC throw the error.
 
 To fix it you can either:
 * Downgrade to Xamarin.Forms 2.3.2
 * Turn off XamlC in AssemblyInfo.cs
+* Use a color like `Red` instead of `{StaticResource Red}`
 
-Note that if you run the app, it doesn't look like anything -- just take note that it does not have XAML that errors when interpreted at runtime.
+You don't really need to run the app to see the issue.
